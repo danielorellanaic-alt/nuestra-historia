@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import Hero from "./sections/Hero";
-import song from "./assets/music/cancion.mp3";
+import song from "./assets/music/Enamorado.mp3";
 
 function App() {
   const audioRef = useRef(null);
@@ -8,17 +8,21 @@ function App() {
 
   const startExperience = () => {
     // Iniciar música
-    audioRef.current.play();
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
 
     // Bajar suavemente a la siguiente sección
-    storyRef.current.scrollIntoView({
-      behavior: "smooth",
-    });
+    if (storyRef.current) {
+      storyRef.current.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
     <>
-      <audio 
+      <audio
         ref={audioRef}
         src={song}
         loop
@@ -26,7 +30,7 @@ function App() {
 
       <Hero onStart={startExperience} />
 
-      <section 
+      <section
         ref={storyRef}
         className="story-section"
       >
@@ -38,7 +42,6 @@ function App() {
           Aquí comenzará nuestra historia...
         </p>
       </section>
-
     </>
   );
 }
