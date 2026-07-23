@@ -12,7 +12,7 @@ function App() {
       audioRef.current.play();
     }
 
-    // Scroll lento hacia la siguiente sección
+    // Scroll lento y constante hacia la siguiente sección
     if (storyRef.current) {
       const targetPosition =
         storyRef.current.getBoundingClientRect().top + window.scrollY;
@@ -33,11 +33,8 @@ function App() {
           1
         );
 
-        // Movimiento suave: acelera al inicio y frena al final
-        const ease =
-          progress < 0.5
-            ? 2 * progress * progress
-            : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+        // Velocidad constante
+        const ease = progress;
 
         window.scrollTo(
           0,
