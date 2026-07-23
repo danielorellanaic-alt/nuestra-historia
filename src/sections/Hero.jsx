@@ -16,7 +16,7 @@ export default function Hero() {
         <h1>
           Daniel
           <span>❤</span>
-          Matías
+          Joshua
         </h1>
 
         <p className="hero-text">
