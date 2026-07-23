@@ -182,3 +182,24 @@
     border-right-color: var(--border);
   }
 }
+
+.story-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  background: #0b0b18;
+  color: white;
+}
+
+.story-section h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.story-section p {
+  font-size: 1.2rem;
+}

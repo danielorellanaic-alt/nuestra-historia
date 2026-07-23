@@ -25,7 +25,7 @@ export default function Hero({ onStart }) {
           que terminaría siendo nuestro lugar favorito.
         </p>
 
-        <button 
+        <button
           className="start-btn"
           onClick={onStart}
         >
