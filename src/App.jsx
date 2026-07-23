@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import Hero from "./sections/Hero";
 import Beginning from "./sections/Beginning";
+import Memories from "./sections/Memories";
 import StarField from "./components/StarField";
 import song from "./assets/music/Enamorado.mp3";
 
@@ -22,7 +23,7 @@ function App() {
       const startPosition = window.scrollY;
       const distance = targetPosition - startPosition;
 
-      const duration = 3000; // 3 segundos
+      const duration = 3000;
 
       let startTime = null;
 
@@ -30,6 +31,7 @@ function App() {
         if (!startTime) startTime = currentTime;
 
         const timeElapsed = currentTime - startTime;
+
         const progress = Math.min(
           timeElapsed / duration,
           1
@@ -62,12 +64,16 @@ function App() {
         loop
       />
 
+
       <Hero onStart={startExperience} />
 
 
       <section ref={storyRef}>
         <Beginning />
       </section>
+
+
+      <Memories />
 
 
     </div>
