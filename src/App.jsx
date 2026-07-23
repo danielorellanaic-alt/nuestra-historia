@@ -1,5 +1,5 @@
 import Hero from "./sections/Hero";
-import song from "./assets/music/cancion.mp3";
+import song from "./assets/music/Enamorado.mp3";
 import { useRef } from "react";
 
 function App() {
