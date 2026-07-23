@@ -1,13 +1,14 @@
 import "./Hero.css";
+import StarField from "../components/StarField";
 
 export default function Hero() {
   return (
     <section className="hero">
+      <StarField />
 
       <div className="overlay" />
 
       <div className="hero-content">
-
         <p className="hero-subtitle">
           Nuestra historia
         </p>
@@ -15,20 +16,19 @@ export default function Hero() {
         <h1>
           Daniel
           <span>❤</span>
-          Joshua
+          Matías
         </h1>
 
         <p className="hero-text">
           Una historia que comenzó sin imaginar
+          <br />
           que terminaría siendo nuestro lugar favorito.
         </p>
 
         <button className="start-btn">
           Comenzar
         </button>
-
       </div>
-
     </section>
   );
 }

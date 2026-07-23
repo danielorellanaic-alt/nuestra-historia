@@ -1,113 +1,91 @@
 .hero {
-    width: 100%;
-    height: 100vh;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    overflow: hidden;
-
-    background:
-        radial-gradient(circle at top, #1b2747 0%, #090a0f 70%);
+  background: radial-gradient(circle at top, #1b2747 0%, #090a0f 70%);
 }
 
-.overlay{
-    position:absolute;
-    inset:0;
-
-    background:rgba(0,0,0,.25);
-
-    backdrop-filter: blur(2px);
+.starfield {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.hero-content{
+.overlay {
+  position: absolute;
+  inset: 0;
 
-    position:relative;
-    z-index:2;
-
-    text-align:center;
-
-    color:white;
-
-    padding:30px;
-
-    width:min(90%,420px);
-
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(1px);
 }
 
-.hero-subtitle{
+.hero-content {
+  position: relative;
+  z-index: 2;
 
-    letter-spacing:4px;
+  width: min(90%, 420px);
 
-    text-transform:uppercase;
+  text-align: center;
 
-    color:#d6d6d6;
+  color: white;
 
-    margin-bottom:18px;
-
-    font-size:.8rem;
-
+  padding: 30px;
 }
 
-.hero h1{
-
-    font-size:3rem;
-
-    line-height:1.1;
-
-    font-weight:700;
-
+.hero-subtitle {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #cfcfcf;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
 }
 
-.hero h1 span{
-
-    display:block;
-
-    margin:15px 0;
-
-    color:#ff6b81;
-
-    font-size:2rem;
-
+.hero h1 {
+  font-size: clamp(3rem, 8vw, 4.5rem);
+  line-height: 1.1;
+  font-weight: 700;
 }
 
-.hero-text{
-
-    margin-top:25px;
-
-    color:#dddddd;
-
-    line-height:1.8;
-
+.hero h1 span {
+  display: block;
+  margin: 18px 0;
+  color: #ff6b81;
+  font-size: 2rem;
 }
 
-.start-btn{
-
-    margin-top:40px;
-
-    padding:15px 35px;
-
-    border:none;
-
-    border-radius:999px;
-
-    cursor:pointer;
-
-    font-size:1rem;
-
-    background:white;
-
-    color:#111;
-
-    transition:.3s;
-
+.hero-text {
+  margin-top: 28px;
+  color: #dddddd;
+  line-height: 1.8;
+  font-size: 1rem;
 }
 
-.start-btn:hover{
+.start-btn {
+  margin-top: 45px;
 
-    transform:scale(1.05);
+  padding: 16px 40px;
 
+  border: none;
+  border-radius: 999px;
+
+  cursor: pointer;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: 0.3s;
+
+  background: white;
+  color: #111;
+}
+
+.start-btn:hover {
+  transform: scale(1.05);
 }
