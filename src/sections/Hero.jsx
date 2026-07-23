@@ -1,7 +1,7 @@
 import "./Hero.css";
 import StarField from "../components/StarField";
 
-export default function Hero() {
+export default function Hero({ onStart }) {
   return (
     <section className="hero">
       <StarField />
@@ -25,7 +25,10 @@ export default function Hero() {
           que terminaría siendo nuestro lugar favorito.
         </p>
 
-        <button className="start-btn">
+        <button 
+          className="start-btn"
+          onClick={onStart}
+        >
           Comenzar
         </button>
       </div>

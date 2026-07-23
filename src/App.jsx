@@ -1,10 +1,13 @@
 import Hero from "./sections/Hero";
 
 function App() {
+
+  const startExperience = () => {
+    console.log("Comenzó la historia ❤️");
+  };
+
   return (
-    <>
-      <Hero />
-    </>
+    <Hero onStart={startExperience} />
   );
 }
 
