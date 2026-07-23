@@ -1,0 +1,85 @@
+.memories {
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 80px 20px;
+
+  color: white;
+
+  text-align: center;
+
+}
+
+
+.memories-content {
+
+  max-width: 900px;
+
+}
+
+
+.memories h2 {
+
+  font-size: 3rem;
+
+  margin-bottom: 30px;
+
+}
+
+
+.memories p {
+
+  font-size: 1.2rem;
+
+  line-height: 1.7;
+
+}
+
+
+.memory-grid {
+
+  margin-top: 60px;
+
+  display: grid;
+
+  grid-template-columns:
+  repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 40px;
+
+}
+
+
+.memory-card {
+
+  background: rgba(255,255,255,0.08);
+
+  padding: 20px;
+
+  border-radius: 25px;
+
+  backdrop-filter: blur(8px);
+
+}
+
+
+.memory-card img {
+
+  width: 100%;
+
+  border-radius: 18px;
+
+}
+
+
+.memory-card p {
+
+  margin-top: 20px;
+
+  font-style: italic;
+
+}
