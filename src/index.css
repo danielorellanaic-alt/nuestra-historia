@@ -12,6 +12,10 @@ body,
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #090a0f;
   font-family: system-ui, sans-serif;
