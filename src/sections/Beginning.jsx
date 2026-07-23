@@ -1,4 +1,5 @@
 import "./Beginning.css";
+import primerRecuerdo from "../assets/images/primer-recuerdo.jpg";
 
 export default function Beginning() {
   return (
@@ -25,7 +26,7 @@ export default function Beginning() {
 
         <div className="memory-photo">
           <img
-            src="/images/primer-recuerdo.jpg"
+            src={primerRecuerdo}
             alt="Nuestro primer recuerdo"
           />
         </div>
