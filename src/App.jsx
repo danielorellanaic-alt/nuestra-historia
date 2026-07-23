@@ -51,7 +51,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="page">
       <audio
         ref={audioRef}
         src={song}
@@ -72,7 +72,7 @@ function App() {
           Aquí comenzará nuestra historia...
         </p>
       </section>
-    </>
+    </div>
   );
 }
 
