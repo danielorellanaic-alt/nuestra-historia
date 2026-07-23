@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import Hero from "./sections/Hero";
+import StarField from "./components/StarField";
 import song from "./assets/music/Enamorado.mp3";
 
 function App() {
@@ -52,6 +53,8 @@ function App() {
 
   return (
     <div className="page">
+      <StarField />
+
       <audio
         ref={audioRef}
         src={song}

@@ -1,10 +1,8 @@
 import "./Hero.css";
-import StarField from "../components/StarField";
 
 export default function Hero({ onStart }) {
   return (
     <section className="hero">
-      <StarField />
 
       <div className="overlay" />
 
@@ -32,6 +30,7 @@ export default function Hero({ onStart }) {
           Comenzar
         </button>
       </div>
+
     </section>
   );
 }
