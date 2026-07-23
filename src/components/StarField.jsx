@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import "./StarField.css";
 
 export default function StarField() {
   const canvasRef = useRef(null);
