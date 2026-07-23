@@ -45,8 +45,8 @@ export default function Memories() {
             />
 
             <p>
-              Otro recuerdo que hizo crecer
-              nuestra historia.
+              Usted puede pedir más que solo
+              una hamburguesa triple 🍔.
             </p>
 
           </div>
