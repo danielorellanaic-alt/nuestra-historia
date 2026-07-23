@@ -7,8 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background: radial-gradient(circle at top, #1b2747 0%, #090a0f 70%);
 }
 
 .starfield {

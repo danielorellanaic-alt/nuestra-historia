@@ -17,7 +17,12 @@ html {
 }
 
 body {
-  background: #090a0f;
+  background: radial-gradient(
+    circle at top,
+    #1b2747 0%,
+    #090a0f 70%
+  );
+
   font-family: system-ui, sans-serif;
 }
 
@@ -34,7 +39,6 @@ body {
   text-align: center;
   padding: 40px;
 
-  background: #0b0b18;
   color: white;
 }
 
