@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import Hero from "./sections/Hero";
+import Beginning from "./sections/Beginning";
 import StarField from "./components/StarField";
 import song from "./assets/music/Enamorado.mp3";
 
@@ -34,7 +35,6 @@ function App() {
           1
         );
 
-        // Velocidad constante
         const ease = progress;
 
         window.scrollTo(
@@ -53,6 +53,7 @@ function App() {
 
   return (
     <div className="page">
+
       <StarField />
 
       <audio
@@ -63,18 +64,12 @@ function App() {
 
       <Hero onStart={startExperience} />
 
-      <section
-        ref={storyRef}
-        className="story-section"
-      >
-        <h2>
-          Nuestra historia ❤️
-        </h2>
 
-        <p>
-          Aquí comenzará nuestra historia...
-        </p>
+      <section ref={storyRef}>
+        <Beginning />
       </section>
+
+
     </div>
   );
 }
