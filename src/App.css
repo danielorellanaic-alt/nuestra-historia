@@ -25,3 +25,20 @@
   max-width: 600px;
   line-height: 1.6;
 }
+
+.page {
+  position: relative;
+  min-height: 100vh;
+}
+
+.starfield {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 0;
+  pointer-events: none;
+}

@@ -59,3 +59,13 @@ body {
     #090a0f 70%
   );
 }
+
+body {
+  margin: 0;
+  background: #050510;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
