@@ -30,8 +30,8 @@ export default function Memories() {
             />
 
             <p>
-              Un momento que quedó guardado
-              para siempre.
+              Tus locuras quedarán siempre 
+              grabadas en mi mente.
             </p>
 
           </div>
