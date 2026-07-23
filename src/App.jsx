@@ -12,38 +12,12 @@ function App() {
       audioRef.current.play();
     }
 
-    // Scroll suave personalizado
+    // Bajar automáticamente a la siguiente sección
     if (storyRef.current) {
-      const targetPosition = storyRef.current.offsetTop;
-      const startPosition = window.scrollY;
-      const distance = targetPosition - startPosition;
-      const duration = 2500; // duración en milisegundos
-
-      let startTime = null;
-
-      const animation = (currentTime) => {
-        if (!startTime) startTime = currentTime;
-
-        const timeElapsed = currentTime - startTime;
-        const progress = Math.min(timeElapsed / duration, 1);
-
-        // Efecto de suavizado (acelera y desacelera)
-        const ease =
-          progress < 0.5
-            ? 2 * progress * progress
-            : 1 - Math.pow(-2 * progress + 2, 2) / 2;
-
-        window.scrollTo(
-          0,
-          startPosition + distance * ease
-        );
-
-        if (timeElapsed < duration) {
-          requestAnimationFrame(animation);
-        }
-      };
-
-      requestAnimationFrame(animation);
+      storyRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
     }
   };
 
